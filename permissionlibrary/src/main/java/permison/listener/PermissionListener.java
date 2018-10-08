@@ -1,4 +1,4 @@
-package permisson.listener;
+package permison.listener;
 
 public interface PermissionListener {
     void havePermission();

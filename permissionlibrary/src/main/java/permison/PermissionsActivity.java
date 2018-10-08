@@ -1,6 +1,5 @@
-package permisson;
+package permison;
 
-import android.Manifest;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -17,19 +16,6 @@ import com.example.permissionlibrary.R;
 
 
 public class PermissionsActivity extends AppCompatActivity {
-
-    public static final String[] PERMISSIONS = {
-            Manifest.permission.CAMERA,
-            Manifest.permission.SEND_SMS,
-            Manifest.permission.WRITE_CONTACTS,
-            Manifest.permission.CALL_PHONE,
-            Manifest.permission.READ_CALENDAR,
-            Manifest.permission.BODY_SENSORS,
-            Manifest.permission.ACCESS_COARSE_LOCATION,
-            Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.RECORD_AUDIO
-    };
-
 
     private static final int PERMISSION_REQUEST_CODE = 0; // 系统权限管理页面的参数
     public static final int PERMISSIONS_GRANTED = 0; // 权限授权
@@ -149,7 +135,7 @@ public class PermissionsActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        overridePendingTransition(0,0);
+        overridePendingTransition(0, 0);
         super.onPause();
     }
 

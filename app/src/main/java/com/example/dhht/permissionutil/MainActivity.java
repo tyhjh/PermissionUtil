@@ -7,9 +7,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import permisson.FloatWindowManager;
-import permisson.PermissonUtil;
-import permisson.listener.PermissionListener;
+import permison.PermissonUtil;
+import permison.listener.PermissionListener;
 
 public class MainActivity extends AppCompatActivity {
 

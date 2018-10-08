@@ -1,8 +1,8 @@
-package permisson;
+package permison;
 
 import android.app.Activity;
 
-import permisson.listener.PermissionListener;
+import permison.listener.PermissionListener;
 
 /**
  * Created by Tyhj on 2018/4/2.
@@ -24,7 +24,7 @@ public class PermissonUtil {
 
     public static PermissionsChecker mPermissionsChecker; // 权限检测器
 
-    public static void   checkPermission(Activity activity, PermissionListener listener, String... permissions) {
+    public static void checkPermission(Activity activity, PermissionListener listener, String... permissions) {
         permissionListener = listener;
         mPermissionsChecker = new PermissionsChecker(activity);
         // 缺少权限时, 进入权限配置页面
@@ -35,7 +35,6 @@ public class PermissonUtil {
         }
         permissonResult(true);
     }
-
 
 
     public static void permissonResult(boolean succ) {

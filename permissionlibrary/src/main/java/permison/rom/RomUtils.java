@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2016 Facishare Technology Co., Ltd. All Rights Reserved.
  */
-package permisson.rom;
+package permison.rom;
 
 import android.os.Build;
 import android.text.TextUtils;

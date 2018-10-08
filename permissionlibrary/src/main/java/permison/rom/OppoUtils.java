@@ -1,4 +1,4 @@
-package permisson.rom;
+package permison.rom;
 
 import android.annotation.TargetApi;
 import android.app.AppOpsManager;

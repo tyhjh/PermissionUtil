@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2016 Facishare Technology Co., Ltd. All Rights Reserved.
  */
-package permisson;
+package permison;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -18,12 +18,12 @@ import android.view.WindowManager;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-import permisson.rom.HuaweiUtils;
-import permisson.rom.MeizuUtils;
-import permisson.rom.MiuiUtils;
-import permisson.rom.OppoUtils;
-import permisson.rom.QikuUtils;
-import permisson.rom.RomUtils;
+import permison.rom.HuaweiUtils;
+import permison.rom.MeizuUtils;
+import permison.rom.MiuiUtils;
+import permison.rom.OppoUtils;
+import permison.rom.QikuUtils;
+import permison.rom.RomUtils;
 
 /**
  * Description:
