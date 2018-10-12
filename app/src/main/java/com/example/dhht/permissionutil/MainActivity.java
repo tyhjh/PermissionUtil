@@ -4,6 +4,7 @@ import android.Manifest;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,6 +15,7 @@ import permison.listener.PermissionListener;
 public class MainActivity extends AppCompatActivity {
 
     TextView tv_hello, tv_flow;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
