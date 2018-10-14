@@ -7,12 +7,12 @@ import android.support.v4.content.ContextCompat;
 public class PermissionsChecker {
     private final Context mContext;
 
-    public PermissionsChecker(Context context) {
+    PermissionsChecker(Context context) {
         mContext = context.getApplicationContext();
     }
 
     // 判断权限集合
-    public boolean lacksPermissions(String... permissions) {
+    boolean lacksPermissions(String... permissions) {
         for (String permission : permissions) {
             if (lacksPermission(permission)) {
                 return true;

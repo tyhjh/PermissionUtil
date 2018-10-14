@@ -14,11 +14,9 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.WindowManager;
 
-
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-import permison.listener.PermissionListener;
 import permison.rom.HuaweiUtils;
 import permison.rom.MeizuUtils;
 import permison.rom.MiuiUtils;
@@ -274,9 +272,4 @@ public class FloatWindowManager {
         void confirmResult(boolean confirm);
     }
 
-
-    private int dp2px(Context context, float dp) {
-        final float scale = context.getResources().getDisplayMetrics().density;
-        return (int) (dp * scale + 0.5f);
-    }
 }

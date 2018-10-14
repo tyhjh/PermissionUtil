@@ -3,7 +3,7 @@
 
     <application>
         <activity android:name="permison.PermissionsActivity"
-            android:theme="@style/translucentTheme"
+            android:theme="@style/tyhjtranslucentTheme"
             />
     </application>
 
