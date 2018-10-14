@@ -30,7 +30,6 @@ public class PermissonUtil {
         // 缺少权限时, 进入权限配置页面
         if (permissions != null && mPermissionsChecker.lacksPermissions(permissions)) {
             PermissionsActivity.startActivityForResult(activity, PERMISSIONS_REQUEST_CODE, permissions);
-            activity.overridePendingTransition(0, 0);
             return;
         }
         permissonResult(true);

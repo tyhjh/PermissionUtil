@@ -135,7 +135,6 @@ public class PermissionsActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        overridePendingTransition(0, 0);
         super.onPause();
     }
 
