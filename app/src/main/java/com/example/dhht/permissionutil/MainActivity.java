@@ -1,10 +1,12 @@
 package com.example.dhht.permissionutil;
 
 import android.Manifest;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,6 +17,7 @@ import permison.listener.PermissionListener;
 public class MainActivity extends AppCompatActivity {
 
     TextView tv_hello, tv_flow;
+    Button btn_next;
 
 
     @Override
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tv_hello = (TextView) findViewById(R.id.tv_hello);
         tv_flow = (TextView) findViewById(R.id.tv_flow);
+        btn_next= (Button) findViewById(R.id.btn_next);
         tv_hello.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,5 +50,18 @@ public class MainActivity extends AppCompatActivity {
                 FloatWindowManager.getInstance().applyOrShowFloatWindow(MainActivity.this);
             }
         });
+        btn_next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,CheckMemoryActivity.class));
+                finish();
+            }
+        });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.e("MainActivity","onDestroy");
     }
 }
