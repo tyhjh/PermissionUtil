@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PermissionUtil</string>
+    <string name="title_activity_check_memory">CheckMemoryActivity</string>
 </resources>

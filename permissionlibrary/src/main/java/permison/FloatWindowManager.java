@@ -54,9 +54,11 @@ public class FloatWindowManager {
 
     public boolean applyOrShowFloatWindow(Context context) {
         if (checkPermission(context)) {//有权限
+            dialog=null;
             return true;
         } else {
             applyPermission(context);
+            dialog=null;
             return false;
         }
     }

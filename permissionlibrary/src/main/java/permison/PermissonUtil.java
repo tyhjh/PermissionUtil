@@ -1,6 +1,7 @@
 package permison;
 
 import android.app.Activity;
+import android.content.Context;
 
 import permison.listener.PermissionListener;
 
@@ -14,14 +15,19 @@ public class PermissonUtil {
 
     private static PermissionListener permissionListener;
 
-    static PermissionsChecker mPermissionsChecker; // 权限检测器
+    /**
+     * 权限检测器
+     */
+    static PermissionsChecker mPermissionsChecker;
 
     public static void checkPermission(Activity activity, PermissionListener listener, String... permissions) {
         permissionListener = listener;
-        mPermissionsChecker = new PermissionsChecker(activity);
+        Context context = activity.getApplicationContext();
+        mPermissionsChecker = new PermissionsChecker(context);
         // 缺少权限时, 进入权限配置页面
         if (permissions != null && mPermissionsChecker.lacksPermissions(permissions)) {
             PermissionsActivity.startActivityForResult(activity, PERMISSIONS_REQUEST_CODE, permissions);
+            permissionListener=null;
             return;
         }
         permissonResult(true);
@@ -34,6 +40,7 @@ public class PermissonUtil {
         } else if (!succ && permissionListener != null) {
             permissionListener.requestPermissionFail();
         }
+        permissionListener=null;
     }
 
 }
