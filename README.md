@@ -24,7 +24,7 @@ Step 2. Add the dependency
 ```
 //Add the dependency
 dependencies {
-	        implementation 'com.github.tyhjh:PermissionUtil:v1.0.2'
+	        implementation 'com.github.tyhjh:PermissionUtil:v1.0.7'
 	}
 ```
 
